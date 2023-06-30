@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>HMusic</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <i class="bx bx-menu pb-10" id="btn"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="../Home/index.html">
+                    <i class='bx bx-home-alt-2'></i>
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="search.html">
+                    <i class='bx bx-search-alt-2'></i>
+                    <span class="nav-item">Search</span>
+                </a>
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="../WeeklyMix/mix.html">
+                    <i class='bx bx-music'></i>
+                    <span class="nav-item">Weekly mix</span>
+                </a>
+                <span class="tooltip">Weekly mix</span>
+            </li>
+            <br>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search">
+            <button>Go</button>
+          </div>
+        
+        <div id="search-results"></div>
+
+        <h1>Search by categories</h1>
+        <div class="category-container">
+            <div class="category-card">
+              <img src="https://wallpapercave.com/wp/wp2737349.jpg" alt="Category 1">
+              <h3>Metal</h3>
+            </div>
+            <div class="category-card">
+              <img src="https://c4.wallpaperflare.com/wallpaper/648/184/1016/instrument-jazz-music-opera-wallpaper-preview.jpg" alt="Category 2">
+              <h3>Jazz</h3>
+            </div>
+            <div class="category-card">
+              <img src="https://images.unsplash.com/photo-1512248607101-e26c16d28749?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZXMlMjBtdXNpY3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="Category 3">
+              <h3>Blues</h3>
+            </div>
+            <div class="category-card">
+                <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701270815.jpg" alt="Category 3">
+                <h3>Country</h3>
+              </div>
+          </div>
+          
+    </div>
+</body>
+
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active')
+    };
+</script>
+
+<script src="main.js"></script>
+</html>
