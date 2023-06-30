@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>HMusic</title>
+</head>
+<body>
+  <!-- Side Bar -->
+    <div class="sidebar">
+        <div class="top">
+            <i class="bx bx-menu pb-10" id="btn"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-home-alt-2'></i>
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+              <a href="../Search/search.html">
+                  <i class='bx bx-search-alt-2'></i>
+                  <span class="nav-item">Search</span>
+              </a>
+              <span class="tooltip">Search</span>
+          </li>
+            <li>
+                <a href="../WeeklyMix/mix.html">
+                    <i class='bx bx-music'></i>
+                    <span class="nav-item">Weekly mix</span>
+                </a>
+                <span class="tooltip">Weekly mix</span>
+            </li>
+            <br>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="slider" style="width: 70%; overflow: hidden; object-fit: cover;">
+            <img src="https://cdn.media.amplience.net/i/metallica/2023-06-05-Vinyl-Bundle-Sale-No-Text-Banner?fmt=auto" alt="Image 1">
+            <img src="https://townsquare.media/site/366/files/2016/06/JudasPriestRanked_Blank.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89" alt="Image 2">
+            <img src="https://i.pinimg.com/originals/f2/d3/f1/f2d3f1ee8699aae5b05deb2741d098fe.jpg" alt="Image 3">
+        </div>
+        
+        <br><br>
+
+        <h1 class="title">Suggested for you</h1>
+        <br>
+        <div class="music-cards">
+            <div class="music-card">
+              <img src="https://theultimaterabbit.files.wordpress.com/2019/06/metallica-black-album-cover.jpg" alt="Music Cover 1">
+              <a href="../pixi_canvas/index.html" class="play-button"></a>
+            </div>
+            <div class="music-card">
+              <img src="img/cover2.jpeg" alt="Music Cover 2">
+              <a href="../pixi_canvas/index.html" class="play-button"></a>
+            </div>
+            <div class="music-card">
+              <img src="https://i1.sndcdn.com/artworks-000067119569-q81b1m-t500x500.jpg" alt="Music Cover 3">
+              <a href="../pixi_canvas/index.html" class="play-button"></a>
+            </div>
+            <div class="music-card">
+              <img src="img/cover4.png" alt="Music Cover 4">
+              <a href="../pixi_canvas/index.html" class="play-button"></a>
+            </div>
+          </div>
+          
+          <h1 class="title">Listen by categories</h1>
+          <div class="container">
+            <div class="row">
+              <div class="card">
+                <div class="card-title">Pop</div>
+              </div>
+              
+              <div class="card">
+                <div class="card-title">Rock</div>
+              </div>
+              
+              <div class="card">
+                <div class="card-title">Hip Hop</div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                  <div class="card-title">Country</div>
+                </div>
+                
+                <div class="card">
+                  <div class="card-title">Albanian</div>
+                </div>
+                
+                <div class="card">
+                  <div class="card-title">Classical</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="card">
+                  <div class="card-title">English</div>
+                </div>
+                
+                <div class="card">
+                  <div class="card-title">Deep House</div>
+                </div>
+                
+                <div class="card">
+                  <div class="card-title">Turkish</div>
+                </div>
+              </div>
+          </div>
+          
+    </div>
+</body>
+
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active')
+    };
+</script>
+
+<script src="main.js"></script>
+</html>
